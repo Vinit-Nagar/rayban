@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "gilroy";
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+}
+#back {
+  width: 100%;
+  height: 100vh;
+}
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top {
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#workingarea {
+  position: relative;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3vh 0;
+}
+#nav img {
+  height: 3.5vw;
+}
+#nleft,
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+#nleft a {
+  pointer-events: all;
+  text-decoration: none;
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+  font-weight: 600;
+  font-family: "gilroy";
+  color: #fff;
+}
+#nright a {
+  pointer-events: all;
+  text-decoration: none;
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+  font-weight: 600;
+  font-family: "gilroy";
+  color: #fff;
+}
+#hero {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#heroleft {
+  min-width: 50%;
+}
+#heroleft .elem {
+  position: relative;
+  height: 9vw;
+  overflow: hidden;
+}
+#heroleft .elem h1:nth-child(1) {
+  top: 0;
+}
+#heroleft .elem h1 {
+  position: absolute;
+  text-transform: uppercase;
+  top: 100%;
+  left: 0;
+  line-height: 1;
+  font-family: "kajiro";
+  color: #fff;
+  font-weight: 100;
+  font-size: 10vw;
+}
+#heroleft button {
+  pointer-events: all;
+  margin-top: 2vw;
+  letter-spacing: 0.5vw;
+  font-size: 2.4vw;
+  padding: 0.5vw 2vw;
+  font-family: "kajiro";
+}
+#heroright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 18%;
+  color: #fff;
+}
+#heroright p {
+  font-size: 0.8vw;
+  font-weight: 300;
+  text-align: right;
+}
+#heroright #imagediv {
+  height: 9vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  width: 100%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8DUg-zlz2hdPwOuK3yM77OO-XDkGYyQGQMg&usqp=CAU);
+  background-size: cover;
+  background-position: center;
+}
+#heroright p:nth-child(3) {
+  margin-bottom: 6vw;
+}
